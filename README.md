@@ -6,4 +6,5 @@ For specific details and implementations, please refer to the following folders:
 - dehazing: Contains implementations for image dehazing using the Fourmer model.
 - deraining: Contains implementations for image deraining using the Fourmer model.
 - llie: Contains implementations for low-light image enhancement (LLIE) using the Fourmer model.
+- pan-sharpening:Contains implementations for pan-sharpening using the Fourmer model.
 
