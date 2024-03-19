@@ -1,0 +1,52 @@
+name: HGK  # project_name
+dataset_name: 'WV3'  # only support 'GF2', 'QB', 'WV3', 'WV2' now
+#model_name: 'HGK'  # only support 'HGK', 'HGK2', 'Fourmer', 'GPPNN' and related ablation parts of HGK2 now
+#model_name: 'HGK2'
+#model_name: 'Fuser'
+# model_name: 'PANINN'
+#model_name: 'woCFI'
+#model_name: 'woCBIFA'
+#model_name: 'woSSM'
+#model_name: 'GPPNN'
+model_name: 'Fourmer'
+#with_hist_loss: True
+with_hist_loss: False
+#with_grad_loss: True
+with_grad_loss: False
+alpha: 0.1
+#with_hist_loss: False
+#with_hist_loss: False
+hidden_channel: 8
+#hidden_channel: 32
+
+epoch_num: 500
+#epoch_num: 300
+#epoch_num: 1000
+batch_size: 32
+#batch_size: 24
+#batch_size: 16
+base_lr: 5e-4
+#base_lr: 1e-4
+#base_lr: 3e-4
+# parameters for scheduler lr
+gamma: 0.1
+step_size: 250
+
+data_path: './data_files'
+# tensorboard file path
+log_dir: './logs'
+tb_log_path: './tb_logs'
+weights_path: './weights/'
+results_path: './results/'
+gpu_list: [0]
+workers: 0
+save_epoch: 25
+#resume:
+# path to the latest check point (default - none)
+#resume_log_id:
+# the id of resumed run if you want to continue log
+#start_epoch: 0
+
+test_mode: 'reduced'
+#test_mode: 'full'
+test_weight_path: 'weights/WV3/20240101-152247/CSNET500.pth'
