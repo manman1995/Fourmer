@@ -6,5 +6,7 @@ Download the training data and add the data path to the config file (config/conf
 #### Training
 
 Set path 'output_dir', 'data' in config/config.yaml.
+Run:
+```
 python train.py
 ```
